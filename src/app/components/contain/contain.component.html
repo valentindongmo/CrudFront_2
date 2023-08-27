@@ -1,0 +1,42 @@
+<div class="show_content">
+  <table border="2">
+    <thead *ngIf="showHead">
+      <th>id</th>
+      <th>UserName</th>
+      <th>Email</th>
+      <th>Pseudo</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users" >
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.pseudo}}</td>
+
+        <td><button type="submit">Edit</button><button type="reset">delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- <table class="show_content" mat-table class="mat-elevation-z8" *ngFor="let user of users">
+  <thead>
+    <th>id</th>
+    <th>UserName</th>
+    <th>Email</th>
+    <th>Pseudo</th>
+    <th>Action</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.pseudo}}</td>
+
+      <td><button type="submit">Edit</button><button type="reset">delete</button></td>
+    </tr>
+  </tbody>
+</table> -->
+

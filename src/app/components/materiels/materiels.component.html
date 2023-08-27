@@ -1,0 +1,51 @@
+<div class="show_content">
+  <button class="btn_add" (click)="showFormSubjet()">Ajouter une matiere</button>
+  <app-add-material *ngIf="FormSubjet"></app-add-material>
+  <h1>Liste des Matieres</h1>
+  <table>
+    <thead>
+      <th>id</th>
+      <th>nom</th>
+      <th>type</th>
+      <th>libelle</th>
+      <th>coefficient</th>
+      <th>Action</th>
+    </thead>
+    <div class="line"></div>
+    <tbody>
+      <tr *ngFor="let subject of subjects">
+        <td>{{subject.id}}</td>
+        <td>{{subject.nom}}</td>
+        <td>{{subject.type}}</td>
+        <td>{{subject.libelle}}</td>
+        <td>{{subject.coefficient}}</td>
+
+        <td><button type="submit" class="edit">modifier</button><button type="reset" class="delete">supprimer</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<!-- <table class="show_content" mat-table class="mat-elevation-z8" *ngFor="let user of users">
+  <thead>
+    <th>id</th>
+    <th>UserName</th>
+    <th>Email</th>
+    <th>Pseudo</th>
+    <th>Action</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.pseudo}}</td>
+
+      <td><button type="submit">Edit</button><button type="reset">delete</button></td>
+    </tr>
+  </tbody>
+</table> -->
+
+

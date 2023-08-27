@@ -1,0 +1,79 @@
+.show_content{
+  margin-top: 200px;
+  width: 100%;
+}
+.show_content .btn_add{
+  min-width: 80px;
+  height: 1.5cm;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: .5s ease-in-out;
+  font-size: 1.5em;
+  margin-left: 15%;
+  padding: 15px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.549);
+}
+.show_content .btn_add:hover{
+  background-color: white;
+  color: green;
+  border: 2px solid green;
+  cursor: pointer;
+}
+.show_content h1{
+  text-align: center;
+  font-size: 3em;
+}
+.show_content table{
+  margin: auto;
+  width: 70%;
+  /* border: 2px solid black; */
+  text-align: center;
+}
+/* .show_content .line{
+  width: 2950%;
+  height: 1px;
+  background-color: black;
+} */
+.show_content table thead{
+  box-shadow: 1px 1px 10px #565656ce;
+  height: 2cm;
+  font-size: 1.3em;
+  /* display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between; */
+  /* background-color: red; */
+}
+.show_content table tbody tr{
+  box-shadow: 1px 1px 10px #565656ce;
+  height: 1.5cm;
+}
+
+.show_content table tbody td .edit, .delete{
+  min-width: 80px;
+  height: 1cm;
+  background-color: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: .5s ease-in-out;
+  font-size: 1.05em;
+  /* font-family: 'Courier New', Courier, monospacex; */
+  cursor: pointer;
+}
+.show_content table tbody td .edit:hover{
+  background-color: white;
+  color: skyblue;
+  border: 2px solid skyblue;
+}
+.show_content table tbody td .delete:hover{
+  background-color: white;
+  color: tomato;
+  border: 2px solid tomato;
+}
+
+.show_content table tbody td .delete{
+  background-color: tomato;
+  margin-left: 10px;
+}

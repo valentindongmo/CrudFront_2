@@ -1,0 +1,49 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_crud{
+  width: 100%;
+  height: 100px;
+  background-color: #1f1fa4;
+  /* sa ces pour les aligne sur la meme ligne */
+  display: flex;
+  /* pour que les element s'afficher avec un espacement verticale */
+  justify-content: space-around;
+/* espacement entre l'objet et la bordure de la page */
+  align-items: center;
+  /* espacement entre pour coller le header l'entete d'une page */
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.941);
+}
+.link_content{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+.link_content a{
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.1em;
+  transition: 0.5s;
+}
+.link_content a:hover{
+  color: #00f2ff;
+  border-bottom: 2px solid #00f2ff;
+}
+.header_crud form input{
+  width: 200px;
+  height: 1cm;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.header_crud form input::placeholder{
+  font-size: 1.1em;
+ padding-left: 10px;
+
+}

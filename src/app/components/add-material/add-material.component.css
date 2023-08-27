@@ -1,0 +1,57 @@
+.form_bg{
+  width: 100%;
+  height: 100%;
+  background: #00000062;
+  position: absolute;
+  top: 0;
+}
+form{
+  width: 400px;
+  /* border: 2px solid black; */
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding-bottom: 20px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+form .form_add{
+  width: 100%;
+  height: 80px;
+  background-color: skyblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .form_input p input{
+  width: 80%;
+  height: 1cm;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+form .form_btn button{
+  min-width: 80px;
+  height: 1cm;
+  background-color: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: .5s ease-in-out;
+  font-size: 1.05em;
+  /* font-family: 'Courier New', Courier, monospacex; */
+  cursor: pointer;
+}
+form .form_btn .btn_reset{
+  background-color: tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 30px;
+}
