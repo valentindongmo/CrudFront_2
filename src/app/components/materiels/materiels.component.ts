@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
 export class MaterielsComponent {
 
   public FormSubjet: boolean = false;
+  public update: boolean = false;
+
+  public upd(){
+    this.update = true
+  }
+
+
   // showFormSubjet
 
   public showFormSubjet(){

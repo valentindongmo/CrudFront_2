@@ -1,6 +1,7 @@
 <div class="show_content">
   <button class="btn_add" (click)="showFormSubjet()">Ajouter une matiere</button>
   <app-add-material *ngIf="FormSubjet"></app-add-material>
+  <app-update-materiel *ngIf="update"></app-update-materiel>
   <h1>Liste des Matieres</h1>
   <table>
     <thead>
@@ -20,7 +21,7 @@
         <td>{{subject.libelle}}</td>
         <td>{{subject.coefficient}}</td>
 
-        <td><button type="submit" class="edit">modifier</button><button type="reset" class="delete">supprimer</button></td>
+        <td><button type="submit" class="edit" (click)="upd()"  >modifier</button><button type="reset" class="delete">supprimer</button></td>
       </tr>
     </tbody>
   </table>

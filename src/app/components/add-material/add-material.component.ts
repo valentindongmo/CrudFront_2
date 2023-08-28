@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-material.component.css']
 })
 export class AddMaterialComponent {
-  public FormSubjet:boolean = false;
+  public FormSubjet: boolean = false;
   // showFormSubjet
 
   // public showFormSubjet(){
