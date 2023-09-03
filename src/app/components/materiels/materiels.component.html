@@ -2,9 +2,40 @@
   <button class="btn_add" (click)="showFormSubjet()">Ajouter une matiere</button>
   <app-add-material *ngIf="FormSubjet"></app-add-material>
   <app-update-materiel *ngIf="update"></app-update-materiel>
+  <app-delete *ngIf="ForClose" ></app-delete>
   <h1>Liste des Matieres</h1>
-  <table>
+  <table class="table table-striped table-striped" id = "dt basic">
     <thead>
+      <tr>
+        <th> Id</th>
+        <th> Firstname</th>
+        <th> Lastname</th>
+        <th> Phone </th>
+        <th> Inviteby </th>
+        <th> Update</th>
+        <th> Delete</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>DONGMO</td>
+        <td>VALENTIN </td>
+        <td>678172890</td>
+        <td>DEVARI</td>
+        <td>
+          <button class="btn btn-primary editbtn"> edit</button>
+        </td>
+        <td>
+          <button class="btn btn-danger deletebtn" > delete</button>
+        </td>
+      </tr>
+    </tbody>
+
+    </table>
+
+    <!-- <thead>
       <th>id</th>
       <th>nom</th>
       <th>type</th>
@@ -19,12 +50,11 @@
         <td>{{subject.nom}}</td>
         <td>{{subject.type}}</td>
         <td>{{subject.libelle}}</td>
-        <td>{{subject.coefficient}}</td>
+        <td>{{subject.coefficient}}</td> -->
 
-        <td><button type="submit" class="edit" (click)="upd()"  >modifier</button><button type="reset" class="delete">supprimer</button></td>
-      </tr>
-    </tbody>
-  </table>
+
+
+
 </div>
 
 

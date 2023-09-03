@@ -1,0 +1,38 @@
+.supprimer{
+  border: 1px solid;
+  width: 250PX;
+  height: 150px;
+  margin-left: 700PX;
+  background-color: white;
+
+}
+.supprimer h1{
+  background-color: rgb(86, 86, 217);
+  color: white;
+  font-size: 20PX;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+
+}
+.supprimer button{
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-left: 50px;
+  width: 50px;
+  height: 30PX;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.supprimer p{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.oui{
+  background-color: rgb(58, 58, 140);
+}
+.non{
+  background-color: red;
+
+}
+

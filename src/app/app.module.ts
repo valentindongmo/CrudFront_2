@@ -13,6 +13,7 @@ import { SubjectComponent } from './pages/subject/subject.component';
 import { MaterielsComponent } from './components/materiels/materiels.component';
 import { AddMaterialComponent } from './components/add-material/add-material.component';
 import { UpdateMaterielComponent } from './components/update-materiel/update-materiel.component';
+import { DeleteComponent } from './components/delete/delete.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { UpdateMaterielComponent } from './components/update-materiel/update-mat
     MaterielsComponent,
     AddMaterialComponent,
     UpdateMaterielComponent,
+    DeleteComponent,
    
   ],
   imports: [

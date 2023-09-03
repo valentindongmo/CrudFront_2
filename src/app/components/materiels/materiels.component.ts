@@ -9,10 +9,15 @@ export class MaterielsComponent {
 
   public FormSubjet: boolean = false;
   public update: boolean = false;
+  public ForClose: boolean= false;
 
   public upd(){
     this.update = true
   }
+  public ForCloses(){
+    this.ForClose= true;
+  }
+ 
 
 
   // showFormSubjet
@@ -25,7 +30,7 @@ export class MaterielsComponent {
   }
 
 
-  public subjects:any[] =[
+  public subjects: any[] =[
     {
       id:1,
       nom: "francais",
