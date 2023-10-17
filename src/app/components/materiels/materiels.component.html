@@ -4,38 +4,8 @@
   <app-update-materiel *ngIf="update"></app-update-materiel>
   <app-delete *ngIf="ForClose" ></app-delete>
   <h1>Liste des Matieres</h1>
-  <table class="table table-striped table-striped" id = "dt basic">
-    <thead>
-      <tr>
-        <th> Id</th>
-        <th> Firstname</th>
-        <th> Lastname</th>
-        <th> Phone </th>
-        <th> Inviteby </th>
-        <th> Update</th>
-        <th> Delete</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>DONGMO</td>
-        <td>VALENTIN </td>
-        <td>678172890</td>
-        <td>DEVARI</td>
-        <td>
-          <button class="btn btn-primary editbtn"> edit</button>
-        </td>
-        <td>
-          <button class="btn btn-danger deletebtn" > delete</button>
-        </td>
-      </tr>
-    </tbody>
-
-    </table>
-
-    <!-- <thead>
+ <table>
+     <thead>
       <th>id</th>
       <th>nom</th>
       <th>type</th>
@@ -50,16 +20,11 @@
         <td>{{subject.nom}}</td>
         <td>{{subject.type}}</td>
         <td>{{subject.libelle}}</td>
-        <td>{{subject.coefficient}}</td> -->
-
-
-
-
+        <td>{{subject.coefficient}}</td>
+        <td><button class="enregistre" type="submit">Edit</button><button class="annuler" type="reset">delete</button></td>
+      </table>
 </div>
-
-
-
-<!-- <table class="show_content" mat-table class="mat-elevation-z8" *ngFor="let user of users">
+<!--  <table class="show_content" mat-table class="mat-elevation-z8" *ngFor="let user of users">
   <thead>
     <th>id</th>
     <th>UserName</th>

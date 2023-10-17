@@ -51,7 +51,7 @@
   height: 1.5cm;
 }
 
-.show_content table tbody td .edit, .delete{
+.show_content table tbody td .edit .delete{
   min-width: 80px;
   height: 1cm;
   background-color: skyblue;
@@ -63,7 +63,7 @@
   /* font-family: 'Courier New', Courier, monospacex; */
   cursor: pointer;
 }
-.show_content table tbody td .edit:hover{
+.show_content table tbody button td .edit:hover{
   background-color: white;
   color: skyblue;
   border: 2px solid skyblue;
@@ -74,7 +74,17 @@
   border: 2px solid tomato;
 }
 
-.show_content table tbody td .delete{
-  background-color: tomato;
-  margin-left: 10px;
+.show_content table tbody td .annuler:hover{
+  min-width: 80px;
+  height: 1cm;
+  background-color: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: .5s ease-in-out;
+  font-size: 1.05em;
+  /* font-family: 'Courier New', Courier, monospacex; */
+  cursor: pointer;
 }
+
+
